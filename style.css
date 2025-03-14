@@ -31,6 +31,12 @@
     top: 15vh;
     left: 10vw;
     z-index: 1;
+    transition: all 1s;
+}
+
+.A1:hover {
+    transform: scale(1.2);
+
 }
 
 .A2 {
@@ -39,6 +45,11 @@
     bottom: 22vh;
     left: 20.7vw;
     z-index: 2;
+    transition: all 1s;
+}
+
+.A2:hover {
+    transform: scale(1.2);
 }
 
 .Texte {
@@ -103,8 +114,8 @@
     border-radius: 2vw;
     cursor: pointer;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.836);
-    
 }
+
 /*Amenties*/
 
 /*Rooms*/
