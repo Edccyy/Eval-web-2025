@@ -4,6 +4,19 @@
 
 /*Amenties*/
 
+#amenties .container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+#amenties .HAUT{
+    left: -5vw;
+    height: 50vh;
+    width: 110vw;
+    background-image: url(../images/ami.jpg);
+}
+
 /*Rooms*/
 
 /*Restaurant*/
