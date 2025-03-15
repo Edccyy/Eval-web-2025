@@ -1,8 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
 /*Home*/
 
 /*About*/
 
 /*Amenties*/
+#amenties {
+    display: flex;
+    align-items: flex-start; /* Assurez-vous que les enfants sont alignés en haut */
+    height: 100vh;
+    width: 100vw;
+}
 
 #amenties .container{
     display: flex;
@@ -13,15 +34,44 @@
 #amenties .HAUT{
     position: relative;
     padding: 0%;
-    top: -0.85vh;
-    left: -2vw;
+    left: -5vw;
     height: 50vh;
     width: 110vw;
     background-image: url(../images/ami.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw 49.2vh;
     border: #c1b086 solid 0.5vh;
     border-radius: 15px;
 }
 
+#amenties .Texte{
+    position: relative;
+    padding: 0%;
+    top: -20vh;
+    left: 50vw;
+    height: 50vh;
+    width: 40vw;
+    background-color: #3f9cc1;
+    color: white;
+    border: #c1b086 solid 0.5vh;
+    border-radius: 15px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#amenties .Texte h1{
+    position: relative;
+    font-size: 1.3em;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+#amenties .Texte .Lorem{
+    position: relative;
+    font-size: 0.85em;
+    padding-top: 5%;
+    padding-left: 5%;
+}
 /*Rooms*/
 
 /*Restaurant*/
