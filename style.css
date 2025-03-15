@@ -7,14 +7,19 @@
 #amenties .container{
     display: flex;
     height: 100vh;
-    width: 100vw;
+    width: 150vw;
 }
 
 #amenties .HAUT{
-    left: -5vw;
+    position: relative;
+    padding: 0%;
+    top: -0.85vh;
+    left: -2vw;
     height: 50vh;
     width: 110vw;
     background-image: url(../images/ami.jpg);
+    border: #c1b086 solid 0.5vh;
+    border-radius: 15px;
 }
 
 /*Rooms*/
