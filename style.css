@@ -12,6 +12,7 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 /*Home*/
 
@@ -75,11 +76,12 @@ html, body {
     font-size: 1.3em;
     padding-top: 6%;
     padding-left: 5%;
+    font-weight: 400;
 }
 
 #amenties .Texte .Lorem{
     position: relative;
-    font-size: 0.85em;
+    font-size: 1.6vh;
     padding-top: 5%;
     padding-left: 5%;
     line-height: 2em;
@@ -94,7 +96,7 @@ html, body {
     "Swin Gym Spa"
     "Boat Surf Conf"
     "Diving Beach vide";
-    gap: 10px;
+    gap: 0.2vh;
 }
 
 
@@ -116,27 +118,27 @@ html, body {
 }
 
 .Boat{
-    padding-top: 8%;
+    padding-top: 2vh;
     grid-area: Boat;
 }
 
 .Surf{
-    padding-top: 8%;
+    padding-top: 2vh;
     grid-area: Surf;
 }
 
 .Conf{
-    padding-top: 8%;
+    padding-top: 2vh;
     grid-area: Conf;
 }
 
 .Diving{
-    padding-top: 8%;
+    padding-top: 2vh;
     grid-area: Diving;
 }
 
 .Beach{
-    padding-top: 8%;
+    padding-top: 2vh;
     grid-area: Beach;
 }
 
@@ -149,6 +151,7 @@ html, body {
     border: white solid 0.4vh;
     padding: 2vh 2vw;
     border-radius: 2vw;
+    box-shadow: #00000080 0 0 1vh;
 }
 /*Rooms*/
 
