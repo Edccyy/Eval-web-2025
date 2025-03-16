@@ -41,6 +41,7 @@ html, body {
     width: 33%;
     border: #c1b086 solid 0.5vh;
     border-radius: 5%;
+    box-shadow: #000000 0 5px 20px;
     overflow: hidden;
 }
 
@@ -70,7 +71,7 @@ html, body {
     border: #c1b086 solid 0.5vh;
     border-radius: 5%;
     overflow: hidden;
-    box-shadow: 0 5px 20px #000000;
+    box-shadow: #000000 0 5px 20px;
 }
 
 #restaurant .Fr img,  .Me img,  .It img,  .De img {
@@ -84,6 +85,44 @@ html, body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto Slab', serif;
+}
+
+#restaurant .trait {
+    width: 6vw;
+    height: 0.4vh;
+    background-color: #c1b086;
+}
+
+#restaurant .titre {
+    padding-top: 2vh;
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+#restaurant .Lorem {
+    padding-top: 6vh;
+    padding-left: 2vw;
+    font-size: 1.7vh;
+    color: #666;
+    line-height: 2.8vh;
+}
+
+#restaurant a {
+    position: relative;
+    top: -5vh;
+    left: 52vw;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    max-width: 5vw;
+    font-size: 0.7vw;
+    background-color: #c1b086;
+    color: white;
+    border: white solid 0.3vh;
+    border-radius: 5vh;
+    box-shadow: #000000 0 5px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1vh;
 }
 
 #restaurant .Repas {
