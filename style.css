@@ -89,8 +89,9 @@
     margin-top: 4vh;
     color: #666;
     line-height: 1;
-    font-size: auto;
+    font-size: 1.5vh;
     line-height: 2.5vh;
+    font-weight: 400;
     text-align: justify;
 }
 
@@ -99,7 +100,7 @@
     margin-top: 4vh;
     color: #666;
     line-height: 1;
-    font-size: auto;
+    font-size: 1.5vh;
     line-height: 2.5vh;
     text-align: justify;
     margin-bottom: 10vh;
