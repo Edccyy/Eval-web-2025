@@ -54,19 +54,19 @@
 }
 
 #rooms .Haut a {
-    top: -5vh;
-    left: 80vw;
+    top: -7vh;
+    left: 75vw;
     position: relative;
     background-color: #c1b086;
     color: #fff;
     border: white 2px solid;
-    padding: 1vh 1vw ;
+    padding: 1.5vh 1vw ;
     text-decoration: none;
     border-radius: 2vw; 
-    box-shadow: #000 0 0 0.5vh;
+    box-shadow: #7e7d7dcb 0 1vh 1vh;
     max-width: 2vw;
-    text-align: auto;
-    font-size: 0.5em;
+    text-align: center;
+    font-size: 0.6em;
 }
 
 #rooms .Bas {
