@@ -73,7 +73,7 @@ html, body {
 #amenties .Texte h1{
     position: relative;
     font-size: 1.3em;
-    padding-top: 5%;
+    padding-top: 6%;
     padding-left: 5%;
 }
 
@@ -82,6 +82,7 @@ html, body {
     font-size: 0.85em;
     padding-top: 5%;
     padding-left: 5%;
+    line-height: 2em;
 }
 
 #amenties .Texte .signe{
@@ -94,6 +95,11 @@ html, body {
     "Boat Surf Conf"
     "Diving Beach vide";
     gap: 10px;
+}
+
+
+#amenties .Texte span{
+    padding-right: 5%;
 }
 
 .Swin{
@@ -110,22 +116,27 @@ html, body {
 }
 
 .Boat{
+    padding-top: 8%;
     grid-area: Boat;
 }
 
 .Surf{
+    padding-top: 8%;
     grid-area: Surf;
 }
 
 .Conf{
+    padding-top: 8%;
     grid-area: Conf;
 }
 
 .Diving{
+    padding-top: 8%;
     grid-area: Diving;
 }
 
 .Beach{
+    padding-top: 8%;
     grid-area: Beach;
 }
 
