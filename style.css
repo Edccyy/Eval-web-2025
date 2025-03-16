@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /*Home*/
 
 /*About*/
@@ -7,5 +23,88 @@
 /*Rooms*/
 
 /*Restaurant*/
+
+#restaurant .container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    gap: 2vh;
+    overflow: hidden;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+}
+
+#restaurant .Re{
+    display: flex;
+    flex: 1 1 33%;
+    width: 33%;
+    border: #c1b086 solid 0.5vh;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+#restaurant .Re img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#restaurant .Er {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 66%;
+    gap: 2vh;
+}
+
+#restaurant .Er  {
+    display: flex;
+    flex-direction: column;
+}
+
+#restaurant .Fr, .Me, .It, .De {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border: #c1b086 solid 0.5vh;
+    border-radius: 5%;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #000000;
+}
+
+#restaurant .Fr img,  .Me img,  .It img,  .De img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#restaurant .Texte {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Slab', serif;
+}
+
+#restaurant .Repas {
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+#restaurant .Haut{
+    height: 30%;
+    display: flex;
+    object-fit: cover;
+    gap: 1vh;
+}
+
+#restaurant .Bas{
+    height: 30%;
+    display: flex;
+    object-fit: cover;
+    gap: 1vh;
+}
 
 /*Gallery*/
