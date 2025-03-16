@@ -57,6 +57,9 @@ html, body {
     border: #c1b08686 solid 0.5vh;
     border-radius: 15px;
     font-family: 'Roboto Slab', serif;
+    transition: all 1s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #amenties .Texte:hover{
@@ -66,6 +69,7 @@ html, body {
     border-radius: 15px;
     
 }
+
 #amenties .Texte h1{
     position: relative;
     font-size: 1.3em;
@@ -78,6 +82,62 @@ html, body {
     font-size: 0.85em;
     padding-top: 5%;
     padding-left: 5%;
+}
+
+#amenties .Texte .signe{
+    display: grid;
+    padding-left: 5%;
+    padding-top: 5%;
+    position: relative;
+    grid-template-areas: 
+    "Swin Gym Spa"
+    "Boat Surf Conf"
+    "Diving Beach vide";
+    gap: 10px;
+}
+
+.Swin{
+    position: relative;
+    grid-area: Swin;
+}
+
+.Gym{
+    grid-area: Gym;
+}
+
+.Spa{
+    grid-area: Spa;
+}
+
+.Boat{
+    grid-area: Boat;
+}
+
+.Surf{
+    grid-area: Surf;
+}
+
+.Conf{
+    grid-area: Conf;
+}
+
+.Diving{
+    grid-area: Diving;
+}
+
+.Beach{
+    grid-area: Beach;
+}
+
+#amenties a{
+    left: 92.5vw;
+    top: -21vh;
+    position: relative;
+    background-color: #c1b086;
+    color: white;
+    border: white solid 0.4vh;
+    padding: 2vh 2vw;
+    border-radius: 2vw;
 }
 /*Rooms*/
 
