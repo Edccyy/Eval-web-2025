@@ -52,13 +52,20 @@ html, body {
     left: 50vw;
     height: 50vh;
     width: 40vw;
-    background-color: #3f9cc1;
-    color: white;
-    border: #c1b086 solid 0.5vh;
+    background-color: #3f9cc163;
+    color: rgba(255, 255, 255, 0.575);
+    border: #c1b08686 solid 0.5vh;
     border-radius: 15px;
     font-family: 'Roboto Slab', serif;
 }
 
+#amenties .Texte:hover{
+    background-color: #3f9cc1;
+    color: white;
+    border: #c1b086 solid 0.5vh;
+    border-radius: 15px;
+    
+}
 #amenties .Texte h1{
     position: relative;
     font-size: 1.3em;
