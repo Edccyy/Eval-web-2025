@@ -427,7 +427,9 @@ about .Images {
     gap: 5%;
 }
 
-#rooms .Bas .photo1, .photo2 , .photo3 {
+#rooms .Bas .photo1, 
+#rooms .Bas .photo2 , 
+#rooms .Bas .photo3 {
     padding: auto;
     max-width: 30%;
     display: flex;
@@ -699,7 +701,6 @@ about .Images {
 #gallery .Bas {
     position: relative;
     display: flex;
-    width: 100%;
     gap:0%;
     
 }
@@ -719,7 +720,6 @@ about .Images {
     overflow: hidden;
     border-radius: 5vh;
     transition: all 1s;
-    justify-content: center;
     opacity: 0.5;
 }
 
@@ -741,6 +741,7 @@ about .Images {
 }
 
 
+
 #action1:checked ~ label.photo1,
 #action2:checked ~ label.photo2,
 #action3:checked ~ label.photo3,
@@ -753,26 +754,14 @@ about .Images {
     opacity: 1;
 }
 
-#action2:checked ~ label.photo1,
-#action3:checked ~ label.photo1,
-#action4:checked ~ label.photo1,
-#action5:checked ~ label.photo1,
-#action6:checked ~ label.photo1,
-#action7:checked ~ label.photo1,
-#action8:checked ~ label.photo1 {
-    width: 3%;
-    opacity: 0.5;
-}
-
-
-#action1:checked ~ .action:not(.action1),
-#action2:checked ~ .action:not(.action2),
-#action3:checked ~ .action:not(.action3),
-#action4:checked ~ .action:not(.action4),
-#action5:checked ~ .action:not(.action5),
-#action6:checked ~ .action:not(.action6),
-#action7:checked ~ .action:not(.action7),
-#action8:checked ~ .action:not(.action8) {
+#action1:checked ~ label:not(.photo1),
+#action2:checked ~ label:not(.photo2),
+#action3:checked ~ label:not(.photo3),
+#action4:checked ~ label:not(.photo4),
+#action5:checked ~ label:not(.photo5),
+#action6:checked ~ label:not(.photo6),
+#action7:checked ~ label:not(.photo7),
+#action8:checked ~ label:not(.photo8) {
     width: 3%;
     opacity: 0.5;
 }
