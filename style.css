@@ -444,4 +444,188 @@ html, body {
 }
 /*Restaurant*/
 
+#restaurant .container {
+    display: flex;
+    height: 100vh;
+    width: 95%;
+    gap: 2vh;
+    overflow: hidden;
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+#restaurant .Re{
+    display: flex;
+    flex: 1 1 33%;
+    width: 33%;
+    height: 100%;
+    border: #c1b086 solid 0.5vh;
+    border-radius: 5%;
+    box-shadow: #000000 0 5px 20px;
+    overflow: hidden;
+}
+
+#restaurant .Re img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#restaurant .Er {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 66%;
+}
+
+#restaurant .Texte {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Slab', serif;
+}
+
+#restaurant .titre::before {
+    content: "";
+    font-size: 0.4vh;
+    display: block;
+    width: 6vw;
+    height: 0.4vh;
+    background-color: #c1b086;
+    position: relative;
+    top:-40%;
+}
+
+#restaurant .titre {
+    padding-top: 3vh;
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+#restaurant .Lorem {
+    padding-top: 3vh;
+    padding-left: 2vw;
+    font-size: 1.7vh;
+    color: #666;
+    line-height: 2.8vh;
+}
+
+#restaurant a {
+    position: relative;
+    top: -7vh;
+    left: 47.5vw;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    max-width: 5vw;
+    font-size: 0.7vw;
+    background-color: #c1b086;
+    color: white;
+    border: white solid 0.3vh;
+    border-radius: 5vh;
+    box-shadow: #000000 0 5px 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1vh;
+}
+
+#restaurant .Repas {
+    display: flex;
+    height: 76.11%;
+    width: 100%;
+    flex-direction: column;
+    gap: 5%;
+}
+
+
+#restaurant .Haut, .Bas {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    gap: 2vh;
+    box-sizing: border-box;
+}
+
+#restaurant .Fr, .Me, .It, .De {
+    flex: 1 1 auto;
+    display: flex;
+    border: #c1b086 solid 0.5vh;
+    padding: 0%;
+    border-radius: 5%;
+    overflow: hidden;
+    box-shadow: #000000 0 5px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#restaurant .Fr img,  .Me img,  .It img,  .De img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#restaurant .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;   
+}
+
+#restaurant .overlay .country{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    left: 0%;
+    height: 15%;
+    bottom: -110%;
+    transition: all 1s ease;
+    background-color: #c1b086ad;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: 'Roboto Slab', serif;
+    }
+
+#restaurant .overlay .Lispum {
+    position: absolute;
+    display: flex;
+    width: 90%;
+    top: -120%;
+    left: 5%;
+    transition: all 1s ;
+    background-color: #c1b086ad ;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    font-family: 'Roboto Slab', serif;
+    padding: 1%;
+    border-radius: 2vh;
+
+    }
+    
+#restaurant .Fr:hover .country, 
+#restaurant .Me:hover .country, 
+#restaurant .It:hover .country,
+#restaurant .De:hover .country {
+    bottom: 70%;
+    z-index: 5;
+}
+
+#restaurant .Fr:hover .Lispum, 
+#restaurant .Me:hover .Lispum, 
+#restaurant .It:hover .Lispum, 
+#restaurant .De:hover .Lispum {
+    top : 50%;
+    z-index: 4;
+}
+
 /*Gallery*/
