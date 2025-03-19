@@ -11,16 +11,23 @@
 /*Gallery*/
 
 #gallery .container {
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
 }
-
+1
 #gallery .Haut {
+    position: relative;
+    padding: 0%;
     display: flex;
     flex-direction: column;
 }
 
 #gallery .Haut .trait {
-
+    width: 6vw;
+    height: 0.5vw;
+    background-color: #c1b086;
 }
 
 #gallery .Haut .Welcome {
@@ -37,5 +44,8 @@
 }
 
 #gallery .Bas .div {
+    position: relative;
+    border: #c1b086 solid 0.5vw;
+    width: 10%;
 
 }
