@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
 
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*Home*
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*Home*/
 
 #home {
     position: relative;
@@ -94,7 +103,140 @@
 /*About*/
 
 /*Amenties*/
+#amenties {
+    display: flex;
+    align-items: flex-start; /* Assurez-vous que les enfants sont alignés en haut */
+    height: 100vh;
+    width: 100vw;
+}
 
+#amenties .container{
+    display: flex;
+    height: 100vh;
+    width: 150vw;
+}
+
+#amenties .HAUT{
+    position: relative;
+    padding: 0%;
+    left: -5vw;
+    height: 50vh;
+    width: 110vw;
+    background-image: url(../images/ami.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw 49.2vh;
+    border: #c1b086 solid 0.5vh;
+    border-radius: 15px;
+}
+
+#amenties .Texte{
+    position: relative;
+    padding: 0%;
+    top: -20vh;
+    left: 50vw;
+    height: 50vh;
+    width: 40vw;
+    background-color: #3f9cc163;
+    color: rgba(255, 255, 255, 0.575);
+    border: #c1b08686 solid 0.5vh;
+    border-radius: 15px;
+    font-family: 'Roboto Slab', serif;
+    transition: all 1s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#amenties .Texte:hover{
+    background-color: #3f9cc1;
+    color: white;
+    border: #c1b086 solid 0.5vh;
+    border-radius: 15px;
+    
+}
+
+#amenties .Texte h1{
+    position: relative;
+    font-size: 1.3em;
+    padding-top: 6%;
+    padding-left: 5%;
+    font-weight: 400;
+}
+
+#amenties .Texte .Lorem{
+    position: relative;
+    font-size: 1.6vh;
+    padding-top: 5%;
+    padding-left: 5%;
+    line-height: 2em;
+}
+
+#amenties .Texte .signe{
+    display: grid;
+    padding-left: 5%;
+    padding-top: 5%;
+    position: relative;
+    grid-template-areas: 
+    "Swin Gym Spa"
+    "Boat Surf Conf"
+    "Diving Beach vide";
+    gap: 0.2vh;
+}
+
+
+#amenties .Texte span{
+    padding-right: 5%;
+}
+
+.Swin{
+    position: relative;
+    grid-area: Swin;
+}
+
+.Gym{
+    grid-area: Gym;
+}
+
+.Spa{
+    grid-area: Spa;
+}
+
+.Boat{
+    padding-top: 2vh;
+    grid-area: Boat;
+}
+
+.Surf{
+    padding-top: 2vh;
+    grid-area: Surf;
+}
+
+.Conf{
+    padding-top: 2vh;
+    grid-area: Conf;
+}
+
+.Diving{
+    padding-top: 2vh;
+    grid-area: Diving;
+}
+
+.Beach{
+    padding-top: 2vh;
+    grid-area: Beach;
+}
+
+#amenties a{
+    left: 92.5vw;
+    top: -21vh;
+    position: relative;
+    background-color: #c1b086;
+    color: white;
+    border: white solid 0.4vh;
+    padding: 2vh 2vw;
+    border-radius: 2vw;
+    box-shadow: #00000080 0 0 1vh;
+}
 /*Rooms*/
 
 #rooms .container {
