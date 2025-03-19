@@ -13,9 +13,10 @@ html, body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-/*Home*/
+/*Home_____________________________________________________________________________________________________________________________________________*/
 
 #home {
     position: relative;
@@ -100,32 +101,30 @@ html, body {
     font-family: "Roboto Slab", sans-serif;
     text-align: justify;
 }
-/*About*/
+/*About__________________________________________________________________________________________________________________________________*/
 
-.Container {
-    display: flex;
+#about .Container {
     max-height: 100vh;
     max-width: 100vw;
 }
 
-.Images {
+about .Images {
     position: relative;
     width: 45%;
     height: 100vh;
-    
 }
 
-.I{
-    position: absolute;
+#about .I{
+    position: relative;
     width: 40%;
     border: #c1b086 solid 0.5vh;
     border-radius: 15px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.836);
 }
 
-.A1 {
+#about .A1 {
     width: 20%;
-    height: 55%;
+    height: 65vh;
     top: 15vh;
     left: 10vw;
     z-index: 1;
@@ -137,36 +136,36 @@ html, body {
 
 }
 
-.A2 {
+#about .A2 {
+    
     width: 20%;
-    height: 30%;
-    bottom: 22vh;
-    left: 20.7vw;
+    height: 40%;
+    top:20vh;
     z-index: 2;
     transition: all 1s;
 }
 
-.A2:hover {
+#about .A2:hover {
     transform: scale(1.2);
 }
 
-.Texte {
+#about .Texte {
     font-family: "Roboto Slab", serif;
     position: relative;
-    top: 15vh;
+    top: -50vh;
     left: 50vw;
     width: 55%;
     height: 100%;
     padding-left: 50px;
 }
 
-.Texte .trait {
+#about .Texte .trait {
     width: 6vw;
     height: 0.5vh;
     background-color: #c1b086;
     margin-bottom: 5vh;
 }
-.Texte p .RAISING {
+#about .Texte p .RAISING {
     margin-top: 5vh;
     font-family: "Roboto Slab", serif;
     hyphens: auto;
@@ -175,14 +174,14 @@ html, body {
     margin-bottom: 5vh; ;
 }
 
-.Texte span {
+#about .Texte span {
     font-size: 4vh;
     margin: 10px 0;
     margin-bottom: 2vh;
     hyphens: auto;
 }
 
-.Texte .Lorem {
+#about .Texte .Lorem {
     margin-left: 3vw;
     margin-top: 4vh;
     color: #666;
@@ -193,7 +192,7 @@ html, body {
     text-align: justify;
 }
 
-.Texte .Lorem2 {
+#about .Texte .Lorem2 {
     margin-left: 3vw;
     margin-top: 4vh;
     color: #666;
@@ -203,7 +202,7 @@ html, body {
     text-align: justify;
     margin-bottom: 10vh;
 }
-.Texte a {
+#about .Texte a {
     margin-left : 3vw;
     background-color: #c1b086;
     color: white;
@@ -216,10 +215,10 @@ html, body {
     text-decoration: none;
 }
 
-/*Amenties*/
+/*Amenties_____________________________________________________________________________________________________________________________________________*/
 #amenties {
     display: flex;
-    align-items: flex-start; /* Assurez-vous que les enfants sont alignés en haut */
+    align-items: flex-start; 
     height: 100vh;
     width: 100vw;
 }
@@ -248,7 +247,7 @@ html, body {
     position: relative;
     padding: 0%;
     top: -20vh;
-    left: 50vw;
+    left: 46vw;
     height: 50vh;
     width: 40vw;
     background-color: #3f9cc163;
@@ -341,7 +340,7 @@ html, body {
 }
 
 #amenties a{
-    left: 92.5vw;
+    left: 88.5vw;
     top: -21vh;
     position: relative;
     background-color: #c1b086;
@@ -350,11 +349,14 @@ html, body {
     padding: 2vh 2vw;
     border-radius: 2vw;
     box-shadow: #00000080 0 0 1vh;
+    text-decoration: none;
 }
-/*Rooms*/
+/*Rooms________________________________________________________________________________________________________________________*/
 
 #rooms .container {
     padding: 0;
+    height: 100vh;
+    width: 100vw;
     margin-left: 10%;
     margin-right: 10%;
     display: flex;
@@ -362,7 +364,7 @@ html, body {
 }
 
 #rooms .Haut {
-    margin-top: 5%;
+    margin-top: 2.5%;
     display: flex;
     flex-direction: column;
     height: 20%;
@@ -400,24 +402,27 @@ html, body {
 
 #rooms .Haut a {
     top: -7vh;
-    left: 75vw;
+    left: 73vw;
     position: relative;
     background-color: #c1b086;
     color: #fff;
     border: white 2px solid;
-    padding: 1.5vh 1vw ;
+    padding: 2.5vh 3vw ;
     text-decoration: none;
     border-radius: 2vw; 
     box-shadow: #7e7d7dcb 0 1vh 1vh;
     max-width: 2vw;
     text-align: center;
-    font-size: 0.6em;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
 }
 
 #rooms .Bas {
     display: flex;
-    height: 80%;
-    width: 100%;
+    height: 65%;
+    width: 80%;
     font-family: 'Roboto Slab', serif;
     gap: 5%;
 }
@@ -442,7 +447,7 @@ html, body {
     display: flex;
     padding-left: 5%;
 }
-/*Restaurant*/
+/*Restaurant___________________________________________________________________________________________________________________*/
 
 #restaurant .container {
     display: flex;
@@ -516,19 +521,19 @@ html, body {
 #restaurant a {
     position: relative;
     top: -7vh;
-    left: 47.5vw;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
-    max-width: 5vw;
-    font-size: 0.7vw;
+    left: 45.5vw;
+    max-width: 7vw;
+    padding: 2vh 2vw ;
+    font-size: 0.8em;
     background-color: #c1b086;
     color: white;
     border: white solid 0.3vh;
     border-radius: 5vh;
     box-shadow: #000000 0 5px 10px;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    font-size: 1vh;
 }
 
 #restaurant .Repas {
@@ -628,7 +633,7 @@ html, body {
     z-index: 4;
 }
 
-/*Gallery*/
+/*Gallery_____________________________________________________________________________________________________________________________*/
 
 #gallery .container {
     display: flex;
@@ -735,7 +740,7 @@ html, body {
     height: 120%;
 }
 
-/* Quand un input est sélectionné, agrandir la photo correspondante */
+
 #action1:checked ~ label.photo1,
 #action2:checked ~ label.photo2,
 #action3:checked ~ label.photo3,
@@ -759,7 +764,7 @@ html, body {
     opacity: 0.5;
 }
 
-/* Toutes les autres photos rétrécissent */
+
 #action1:checked ~ .action:not(.action1),
 #action2:checked ~ .action:not(.action2),
 #action3:checked ~ .action:not(.action3),
