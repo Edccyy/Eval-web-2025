@@ -26,19 +26,21 @@ html, body {
 
 #restaurant .container {
     display: flex;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 95%;
     gap: 2vh;
     overflow: hidden;
-    padding-left: 5%;
+    padding-left: 10%;
     padding-right: 5%;
     padding-top: 1%;
+    padding-bottom: 2%;
 }
 
 #restaurant .Re{
     display: flex;
     flex: 1 1 33%;
     width: 33%;
+    height: 100%;
     border: #c1b086 solid 0.5vh;
     border-radius: 5%;
     box-shadow: #000000 0 5px 20px;
@@ -56,19 +58,77 @@ html, body {
     flex-direction: column;
     height: 100%;
     width: 66%;
-    gap: 2vh;
 }
 
-#restaurant .Er  {
+#restaurant .Texte {
+    height: 20%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto Slab', serif;
+}
+
+#restaurant .trait {
+    position: relative;
+    width: 6vw;
+    height: 0.4vh;
+    background-color: #c1b086;
+}
+
+#restaurant .titre {
+    padding-top: 3vh;
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+#restaurant .Lorem {
+    padding-top: 3vh;
+    padding-left: 2vw;
+    font-size: 1.7vh;
+    color: #666;
+    line-height: 2.8vh;
+}
+
+#restaurant a {
+    position: relative;
+    top: -7vh;
+    left: 47.5vw;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    max-width: 5vw;
+    font-size: 0.7vw;
+    background-color: #c1b086;
+    color: white;
+    border: white solid 0.3vh;
+    border-radius: 5vh;
+    box-shadow: #000000 0 5px 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1vh;
+}
+
+#restaurant .Repas {
+    display: flex;
+    height: 76.11%;
+    width: 100%;
+    flex-direction: column;
+    gap: 5%;
+}
+
+
+#restaurant .Haut, .Bas {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    gap: 2vh;
+    box-sizing: border-box;
 }
 
 #restaurant .Fr, .Me, .It, .De {
+    flex: 1 1 auto;
     display: flex;
-    height: 100%;
-    width: 100%;
     border: #c1b086 solid 0.5vh;
+    padding: 0%;
     border-radius: 5%;
     overflow: hidden;
     box-shadow: #000000 0 5px 20px;
@@ -78,72 +138,6 @@ html, body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-#restaurant .Texte {
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Roboto Slab', serif;
-}
-
-#restaurant .trait {
-    width: 6vw;
-    height: 0.4vh;
-    background-color: #c1b086;
-}
-
-#restaurant .titre {
-    padding-top: 2vh;
-    font-size: 1.3vw;
-    font-weight: 400;
-}
-
-#restaurant .Lorem {
-    padding-top: 6vh;
-    padding-left: 2vw;
-    font-size: 1.7vh;
-    color: #666;
-    line-height: 2.8vh;
-}
-
-#restaurant a {
-    position: relative;
-    top: -5vh;
-    left: 52vw;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
-    max-width: 5vw;
-    font-size: 0.7vw;
-    background-color: #c1b086;
-    color: white;
-    border: white solid 0.3vh;
-    border-radius: 5vh;
-    box-shadow: #000000 0 5px 20px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1vh;
-}
-
-#restaurant .Repas {
-    display: flex;
-    height: 70%;
-    flex-direction: column;
-    gap: 1vh;
-}
-
-#restaurant .Haut{
-    height: 30%;
-    display: flex;
-    object-fit: cover;
-    gap: 1vh;
-}
-
-#restaurant .Bas{
-    height: 30%;
-    display: flex;
-    object-fit: cover;
-    gap: 1vh;
 }
 
 /*Gallery*/
