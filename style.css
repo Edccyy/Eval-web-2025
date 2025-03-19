@@ -43,9 +43,29 @@
     
 }
 
-#gallery .Bas .div {
+#gallery .photo1,
+#gallery .photo2,
+#gallery .photo3,
+#gallery .photo4,
+#gallery .photo5,
+#gallery .photo6,
+#gallery .photo7,
+#gallery .photo8{
     position: relative;
     border: #c1b086 solid 0.5vw;
     width: 10%;
+    height: 80vh;
+    overflow: hidden;
+    border-radius: 5vh;
+}
 
+#gallery .photo1 img,
+#gallery .photo2 img,
+#gallery .photo3 img,
+#gallery .photo4 img,
+#gallery .photo5 img,
+#gallery .photo6 img,
+#gallery .photo7 img,
+#gallery .photo8 img{
+    object-fit: cover;
 }
