@@ -31,31 +31,67 @@ html, body {
     flex-direction: column;
     height: 100vh;
     width: 100vw;
+    margin-left: 12%;
+    margin-right: 12%;
 }
-1
+
 #gallery .Haut {
-    position: relative;
-    padding: 0%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 0%;
+    padding-top: 1.5%;
 }
 
 #gallery .Haut .trait {
     width: 6vw;
-    height: 0.5vw;
+    height: 0.2vw;
     background-color: #c1b086;
 }
 
 #gallery .Haut .Welcome {
+    margin-top: 1.5%;
+    padding-top: 1%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+    color: #666;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
 
 }
 
 #gallery .Haut .Titre {
+    padding-top: 0.5%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+}
 
+#gallery a {
+    position: relative;
+    left: 62.5%;
+    bottom : 50%;  
+    padding: 4vh 4vw ;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width:7.5vw;
+    max-height: 2vh;
+    background-color: #c1b086;
+    color: white;
+    border: white solid 0.3vh;
+    border-radius: 5vh;
+    box-shadow: #000000 0 5px 10px;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #gallery .Bas {
+    position: relative;
     display: flex;
+    width: 100%;
+    gap:0%;
     
 }
 
@@ -68,11 +104,19 @@ html, body {
 #gallery .photo7,
 #gallery .photo8{
     position: relative;
-    border: #c1b086 solid 0.5vw;
-    width: 10%;
-    height: 80vh;
+    border: #c1b086 solid 0.3vw;
+    width: 3%;
+    height: 70vh;
     overflow: hidden;
     border-radius: 5vh;
+    transition: all 1s;
+    justify-content: center;
+    opacity: 0.5;
+}
+
+#gallery .photo1{
+    width: 55%;
+    opacity: 1;
 }
 
 #gallery .photo1 img,
@@ -84,4 +128,42 @@ html, body {
 #gallery .photo7 img,
 #gallery .photo8 img{
     object-fit: cover;
+    height: 120%;
+}
+
+/* Quand un input est sélectionné, agrandir la photo correspondante */
+#action1:checked ~ label.photo1,
+#action2:checked ~ label.photo2,
+#action3:checked ~ label.photo3,
+#action4:checked ~ label.photo4,
+#action5:checked ~ label.photo5,
+#action6:checked ~ label.photo6,
+#action7:checked ~ label.photo7,
+#action8:checked ~ label.photo8 {
+    width: 55%;
+    opacity: 1;
+}
+
+#action2:checked ~ label.photo1,
+#action3:checked ~ label.photo1,
+#action4:checked ~ label.photo1,
+#action5:checked ~ label.photo1,
+#action6:checked ~ label.photo1,
+#action7:checked ~ label.photo1,
+#action8:checked ~ label.photo1 {
+    width: 3%;
+    opacity: 0.5;
+}
+
+/* Toutes les autres photos rétrécissent */
+#action1:checked ~ .action:not(.action1),
+#action2:checked ~ .action:not(.action2),
+#action3:checked ~ .action:not(.action3),
+#action4:checked ~ .action:not(.action4),
+#action5:checked ~ .action:not(.action5),
+#action6:checked ~ .action:not(.action6),
+#action7:checked ~ .action:not(.action7),
+#action8:checked ~ .action:not(.action8) {
+    width: 3%;
+    opacity: 0.5;
 }
