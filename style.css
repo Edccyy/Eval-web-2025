@@ -9,3 +9,33 @@
 /*Restaurant*/
 
 /*Gallery*/
+
+#gallery .container {
+    padding: 0;
+}
+
+#gallery .Haut {
+    display: flex;
+    flex-direction: column;
+}
+
+#gallery .Haut .trait {
+
+}
+
+#gallery .Haut .Welcome {
+
+}
+
+#gallery .Haut .Titre {
+
+}
+
+#gallery .Bas {
+    display: flex;
+    
+}
+
+#gallery .Bas .div {
+
+}
