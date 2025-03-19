@@ -68,11 +68,15 @@ html, body {
     font-family: 'Roboto Slab', serif;
 }
 
-#restaurant .trait {
-    position: relative;
+#restaurant .titre::before {
+    content: "";
+    font-size: 0.4vh;
+    display: block;
     width: 6vw;
     height: 0.4vh;
     background-color: #c1b086;
+    position: relative;
+    top:-40%;
 }
 
 #restaurant .titre {
@@ -132,12 +136,76 @@ html, body {
     border-radius: 5%;
     overflow: hidden;
     box-shadow: #000000 0 5px 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 #restaurant .Fr img,  .Me img,  .It img,  .De img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#restaurant .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;   
+}
+
+#restaurant .overlay .country{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    left: 0%;
+    height: 15%;
+    bottom: -110%;
+    transition: all 1s ease;
+    background-color: #c1b086ad;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-family: 'Roboto Slab', serif;
+    }
+
+#restaurant .overlay .Lispum {
+    position: absolute;
+    display: flex;
+    width: 90%;
+    top: -120%;
+    left: 5%;
+    transition: all 1s ;
+    background-color: #c1b086ad ;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    font-family: 'Roboto Slab', serif;
+    padding: 1%;
+    border-radius: 2vh;
+
+    }
+    
+#restaurant .Fr:hover .country, 
+#restaurant .Me:hover .country, 
+#restaurant .It:hover .country,
+#restaurant .De:hover .country {
+    bottom: 70%;
+    z-index: 5;
+}
+
+#restaurant .Fr:hover .Lispum, 
+#restaurant .Me:hover .Lispum, 
+#restaurant .It:hover .Lispum, 
+#restaurant .De:hover .Lispum {
+    top : 50%;
+    z-index: 4;
 }
 
 /*Gallery*/
