@@ -235,7 +235,7 @@ about .Images {
     left: -5vw;
     height: 50vh;
     width: 110vw;
-    background-image: url(../images/ami.jpg);
+    background-image: url(./Images/ami.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100vw 49.2vh;
@@ -449,6 +449,7 @@ about .Images {
     display: flex;
     padding-left: 5%;
 }
+
 /*Restaurant___________________________________________________________________________________________________________________*/
 
 #restaurant .container {
