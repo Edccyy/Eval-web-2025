@@ -21,7 +21,7 @@ html, body {
 #home {
     position: relative;
     top: -1vh;
-    height: 99vh;
+    height: 100vh;
     width: 100vw;
     background: url(./Images/home1.jpg) no-repeat;
     background-size:cover;
@@ -65,13 +65,12 @@ html, body {
     position: relative;
     text-align: center;
     color: #333;
-    margin-top: 1vh;
     font-size: 2.1em;
 }
 
 #home .H h1 {
     position: absolute;
-    top: -0vh;
+    top: 6vh;
     left: 15vw;
     color: white;
     opacity: 0.2;
@@ -83,7 +82,7 @@ html, body {
     position: relative;
     text-align: center;
     margin-top: 1vh;
-    top : 25vh;
+    top : 32vh;
     left : -19.2vw;
     color: white;
     opacity: 0.9;
